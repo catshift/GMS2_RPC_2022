@@ -12,17 +12,17 @@ namespace GMS2_RPC.Main
     {
         /// <summary> ID of the application on Discord's Developer site. </summary>
         /// <remarks> Required for usage of assets hosted on Discord's Developer site. </remarks>
-        private static readonly string clientID_GMS2 = "634416362898325534";
+        private static readonly string clientID_GMS2 = "1069451219917086800";
 
         /// <summary> Name variations of the primary executable. </summary>
-        private static readonly string[] applicationList_IDE = {"GameMakerStudio", "GameMakerStudio-Beta"};
+        private static readonly string[] applicationList_IDE = {"GameMakerStudio", "GameMakerStudio-Beta", "GameMaker"};
 
         /// <summary> Name of the executable that runs the developed application. </summary>
         private static readonly string application_runner = "Runner";
 
         /// <summary> Unique window title that the primary executable will have while on its start page.</summary>
-        internal static readonly string windowTitle_startPage = "Start Page - GameMaker Studio 2";
-
+        internal static readonly string windowTitle_startPage = "Start Page - GameMaker";
+        
         /// <summary> Time between checks for instances of primary executable. </summary>
         private static int applicationCheckDelay = Int32.Parse(INI_Config.DefaultData.applicationCheckDelay);
 
@@ -90,7 +90,7 @@ namespace GMS2_RPC.Main
         {
             if (!String.IsNullOrWhiteSpace(text))
             {
-                int charLocation = text.IndexOf(" - GameMaker Studio 2", StringComparison.Ordinal);
+                int charLocation = text.IndexOf(" - GameMaker", StringComparison.Ordinal);
 
                 if (charLocation > 0)
                 {

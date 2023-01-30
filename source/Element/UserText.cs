@@ -28,7 +28,7 @@
             internal static readonly string status_ide = "In main workspace";
             internal static readonly string status_game = "Running the application";
 
-            internal static readonly string presence_imageTitle = "GameMaker Studio 2 IDE";
+            internal static readonly string presence_imageTitle = "GameMaker";
         }
 
         /// <summary> Text displayed by the tray icon and some of its elements. </summary>
